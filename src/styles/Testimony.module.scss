@@ -1,0 +1,67 @@
+.testimony_section {
+  @apply w-full;
+}
+
+.testimony {
+  @apply w-[90%] mx-auto text-center;
+}
+
+.testimony h1 {
+  @apply text-[50px] mt-16  font-bold;
+}
+
+.testimony p {
+  @apply text-xl font-normal mb-10 text-color5;
+}
+
+.carousel .review {
+  @apply flex flex-col space-x-3;
+}
+
+.testifier {
+  @apply flex justify-center space-x-4 items-center;
+}
+
+.testifier img {
+  @apply w-[79px] h-[79px];
+}
+
+.testifier h3 {
+  @apply text-xl p-0 m-0 font-bold;
+}
+
+.testifier p {
+  @apply text-lg p-0 m-0;
+}
+
+.testifier div {
+  @apply flex flex-col;
+}
+
+.testifier div span {
+  @apply flex space-x-2 mt-2;
+}
+
+.testifier div span img {
+  @apply w-[18px] h-[16.36px] p-0;
+}
+
+.navigator {
+  @apply flex items-center space-x-3 w-[60%] justify-between mx-auto mt-12;
+}
+
+.navigator img {
+  @apply cursor-pointer;
+}
+
+.indicators {
+  @apply flex space-x-2;
+}
+
+.indicators .ind1 {
+  @apply w-[47px] h-[18px] rounded-[62px] bg-color7;
+}
+
+.indicators span {
+  @apply w-[18px] h-[18px] bg-color5 rounded-full;
+}

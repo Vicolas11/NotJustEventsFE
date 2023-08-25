@@ -1,0 +1,101 @@
+.advert_section {
+  @apply w-full mt-24;
+}
+
+.advert {
+  @apply w-[90%] mx-auto;
+}
+
+.advert .top {
+  @apply flex items-center;
+}
+
+.advert .top .left {
+  @apply flex flex-col space-y-4;
+}
+
+.advert .top .left h1 {
+  @apply text-[50px] font-bold;
+}
+
+.advert .top .left p {
+  @apply text-2xl text-color3;
+}
+
+.advert .top .left,
+.advert .top .right {
+  @apply w-full;
+}
+
+.advert .top .right {
+  @apply flex justify-center;
+}
+
+.advert .top .right img {
+  @apply w-[70%];
+}
+
+.btn_wrapper {
+  @apply flex space-x-4;
+}
+
+.btn_applestore,
+.btn_playstore {
+  @apply flex space-x-1 py-[10px] px-5 rounded-[40px] bg-prmColor text-bgColor;
+  @apply font-medium w-fit items-center my-8;
+  @apply hover:bg-hovColor text-sm;
+  @apply active:bg-preColor font-medium;
+  transition: 0.3s;
+}
+
+.btn_applestore img,
+.btn_playstore img {
+  @apply w-5;
+}
+
+.subscribe {
+  @apply w-full mt-24;
+}
+
+.down {
+  @apply bg-prmColor rounded-[40px] py-14 px-6 mx-auto;
+  @apply flex space-x-3 items-center;
+}
+
+.down .left,
+.down .right {
+  @apply w-full flex flex-col;
+}
+
+.down .left {
+  @apply text-bgColor;
+}
+
+.down .left h2 {
+  @apply text-[58px] font-medium;
+}
+
+.down .left .p {
+  @apply text-2xl;
+}
+
+.down .right {
+  @apply space-y-5;
+}
+
+.down .right input {
+  @apply bg-bgColor rounded-[40px] placeholder:text-lg;
+  @apply placeholder:text-color8 py-[12px] px-4;
+}
+
+.btn_subscribe {
+  @apply flex space-x-1 py-[12px] px-5 rounded-[40px] bg-bgColor text-prmColor;
+  @apply font-medium w-fit items-center my-8;
+  @apply hover:bg-hovColor text-sm;
+  @apply active:bg-preColor font-medium;
+  transition: 0.3s;
+}
+
+.btn_subscribe img {
+  @apply w-3;
+}

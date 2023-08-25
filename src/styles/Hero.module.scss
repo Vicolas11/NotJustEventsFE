@@ -1,0 +1,55 @@
+.hero_section {
+  @apply w-full;
+}
+
+.hero {
+  @apply flex flex-col w-full text-center mt-10;
+}
+
+.hero h1 {
+  @apply text-[68px] font-extrabold w-[80%] mx-auto;
+  line-height: 84.7px;
+}
+
+.hero h1 .evt_txt,
+.hero h1 .inno_txt {
+  @apply text-prmColor;
+}
+
+.hero p {
+  @apply mt-5 mx-auto w-[60%] text-[24px];
+}
+
+.btn_take_tour {
+  @apply flex space-x-1 py-[10px] px-8 rounded-[40px] bg-prmColor text-bgColor;
+  @apply font-medium border-transparent w-fit items-center my-8;
+  @apply hover:bg-hovColor mx-auto text-sm;
+  @apply active:bg-preColor font-medium;
+  transition: 0.3s;
+}
+
+.btn_take_tour img {
+  @apply w-3;
+}
+
+.hero_img_wrapper {
+  @apply w-[90%] mx-auto flex justify-center relative;
+}
+
+.hero_img_wrapper .overlap {
+  @apply flex justify-around items-center space-x-3 mx-auto absolute bg-color1;
+  @apply bottom-[-40px] w-[90%] rounded-lg py-6;
+  box-shadow: 0px 8.185198783874512px 16.370397567749023px 0px #00277626;
+}
+
+.hero_img_wrapper .overlap span {
+  @apply flex flex-col items-center w-full;
+}
+
+.hero_img_wrapper .overlap span h2 {
+  @apply font-black text-3xl p-0 m-0 text-prmColor;
+}
+
+.hero_img_wrapper .overlap span p {
+  @apply font-semibold p-0 m-0;
+}

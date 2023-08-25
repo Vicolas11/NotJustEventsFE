@@ -1,0 +1,69 @@
+footer {
+  @apply bg-color2 py-3 w-full mt-16 pt-20;
+}
+
+.footer .wrapper {
+  @apply mx-auto;
+}
+
+.more_info {
+  @apply flex w-[90%] mx-auto;
+}
+
+.more_info .col {
+  @apply flex flex-col w-full text-left items-center;
+}
+
+.more_info h4 {
+  @apply text-color3 text-2xl font-medium p-0 m-0;
+}
+
+.more_info .col:nth-child(1) h4 {
+  @apply ml-[-40px];
+}
+
+.more_info .col:nth-child(2) h4 {
+  @apply ml-[-40px];
+}
+
+.more_info ul {
+  @apply list-none flex flex-col space-y-2;
+}
+
+.more_info li {
+  @apply hover:text-hovColor hover:underline;
+}
+
+.more_info li a {
+  @apply text-lg;
+}
+
+.follow_us {
+  @apply flex justify-end items-center space-x-8 w-[90%] mx-auto my-8;
+}
+
+.follow_us h3 {
+  @apply text-xl text-color3 font-semibold;
+}
+
+.social_media {
+  @apply flex space-x-2 items-center;
+}
+
+.social_media span {
+  @apply bg-txtColor w-7 h-7 rounded-full hover:bg-hovColor;
+  @apply cursor-pointer flex justify-center items-center;
+}
+
+.social_media span img {
+  @apply w-4 h-auto;
+}
+
+.copyright {
+  @apply text-color3 border-t-[.5px] border-color5 w-[90%] mx-auto;
+  @apply text-center;
+}
+
+.copyright p {
+  @apply mt-2 text-lg;
+}

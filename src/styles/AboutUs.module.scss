@@ -1,0 +1,67 @@
+.aboutus_section {
+  @apply mt-24;
+}
+
+.aboutus {
+  @apply flex w-[90%] mx-auto justify-center space-x-3;
+}
+
+.aboutus_section .left {
+  @apply w-[24%] space-y-3;
+}
+
+.aboutus_section .right {
+  @apply w-[76%];
+}
+
+.aboutus_section .top {
+  @apply ml-6;
+}
+
+.aboutus_section .top h1 {
+  @apply font-black p-0 m-0 text-prmColor;
+  @apply rounded-[40px] bg-color1 py-2 px-5 w-fit;
+}
+
+.aboutus_section .top h2 {
+  @apply font-black text-[58px] p-0 m-0 my-3;
+}
+
+.aboutus_section .top p {
+  @apply p-0 m-0 text-justify text-[24px];
+  line-height: 28.8px;
+}
+
+.btn_get_started {
+  @apply flex space-x-1 py-[10px] px-5 rounded-[40px] bg-prmColor text-bgColor;
+  @apply font-medium w-fit items-center my-8;
+  @apply hover:bg-hovColor text-sm;
+  @apply active:bg-preColor font-medium;
+  transition: 0.3s;
+}
+
+.btn_get_started img {
+  @apply w-3;
+}
+
+.aboutus_section .down {
+  @apply flex space-x-3 justify-between w-full;
+}
+
+.aboutus_section .col1 {
+  @apply mt-16;
+}
+
+.aboutus_section .col2 {
+  @apply mt-32;
+}
+
+.aboutus_section .col1 img,
+.aboutus_section .col2 img,
+.aboutus_section .col3 img {
+  @apply w-full h-auto;
+}
+
+.aboutus_section .down div {
+  @apply space-y-3;
+}

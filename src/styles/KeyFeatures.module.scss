@@ -1,0 +1,49 @@
+.key_features_section {
+  @apply bg-color4 mt-6 pb-8;
+}
+
+.key_features {
+  @apply w-[90%] mx-auto;
+}
+
+.key_features h1 {
+  @apply text-[58px] pt-24 text-center font-medium;
+}
+
+.card_wrapper {
+  @apply flex justify-around items-start w-full space-x-8 flex-wrap;
+}
+
+.card_wrapper .card {
+  @apply flex w-[25%] h-[392px] flex-col rounded-[40px] bg-bgColor;
+  @apply py-8 px-4 space-y-3 items-center mt-12;
+}
+
+.card_wrapper .card > div {
+  @apply flex justify-center w-fit items-start bg-color4 p-5 rounded-[20px];
+}
+
+.card_wrapper .card > h2 {
+  @apply text-2xl font-semibold text-center;
+}
+
+.card_wrapper .card > p {
+  @apply text-[15px] font-normal text-justify;
+  line-height: 18px;
+}
+
+.btn_wrapper {
+  @apply flex justify-center mt-6;
+}
+
+.btn_explore {
+  @apply flex space-x-1 py-[10px] px-5 rounded-[40px] bg-transparent text-prmColor;
+  @apply font-medium w-fit items-center my-8 border-prmColor border-2;
+  @apply hover:bg-hovColor hover:text-bgColor text-sm;
+  @apply active:bg-preColor font-medium;
+  transition: 0.3s;
+}
+
+.btn_explore img {
+  @apply w-3;
+}

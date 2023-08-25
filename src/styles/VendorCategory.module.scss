@@ -1,0 +1,85 @@
+.category_section {
+  @apply w-full;
+}
+
+.category {
+  @apply w-[90%] mx-auto;
+}
+
+.category h1 {
+  @apply text-[58px] pt-24 mb-10 font-medium text-center;
+}
+
+.category div {
+  @apply flex w-full space-x-2;
+}
+
+.category .col1,
+.category .col2,
+.category .col3,
+.category .col4 {
+  @apply flex flex-col justify-stretch items-stretch space-y-3 px-1;
+}
+
+.category .col1 h3,
+.category .col2 h3,
+.category .col3 h3,
+.category .col4 h3 {
+  @apply text-[20px] font-semibold;
+}
+
+.category .col1 img,
+.category .col2 img,
+.category .col3 img,
+.category .col4 img {
+  flex: 1;
+  object-fit: cover;
+}
+
+.category .col4 {
+  @apply h-auto w-1/2;
+}
+
+.category .col4 img {
+  @apply rounded-tr-[20px] rounded-br-[20px];
+}
+
+.create_evts {
+  @apply bg-color4 relative mt-20 pb-20;
+}
+
+.create {
+  @apply w-[90%] mx-auto flex;
+}
+
+.create .left {
+  @apply w-[30%];
+}
+
+.create .right {
+  @apply w-[70%] relative;
+}
+
+.btn_wrapper {
+  @apply flex mt-[12rem] ml-[12rem];
+}
+
+.arrow {
+  @apply absolute top-0 left-0 mt-9 ml-2;
+}
+
+.create .left h1 {
+  @apply text-[50px] mt-14 font-medium;
+  line-height: 56px;
+}
+
+.btn_create_evts {
+  @apply py-[12px] px-7 rounded-[40px] bg-prmColor text-bgColor;
+  @apply font-medium w-fit my-8 hover:bg-hovColor text-sm;
+  @apply active:bg-preColor;
+  transition: 0.3s;
+}
+
+.box {
+  @apply absolute bottom-0 right-0;
+}

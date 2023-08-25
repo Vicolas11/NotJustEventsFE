@@ -1,0 +1,111 @@
+.how_it_works_section {
+  @apply bg-color4 pb-12;
+}
+
+.how_it_works h1 {
+  @apply text-[58px] mt-16 pt-16 mb-10 font-medium text-center;
+}
+
+.how_it_works .wrapper {
+  @apply space-y-5;
+}
+
+.how_it_works .wrapper div {
+  @apply flex rounded-[40px];
+  @apply w-[90%] mx-auto h-fit;
+}
+
+.how_it_works .wrapper div > .left,
+.how_it_works .wrapper div > .right {
+  @apply w-full h-fit;
+}
+
+.vendors .left,
+.organizers .right,
+.owners .left,
+.attendees .right {
+  @apply flex flex-col;
+}
+
+.list_items {
+  @apply flex flex-col items-start;
+}
+
+.vendors .right, .owners .right {
+  @apply flex justify-end;
+}
+
+.vendors .right img,
+.organizers .left img,
+.owners .right img,
+.attendees .left img {
+  @apply h-auto w-[80%];
+}
+
+.vendors .left h2,
+.organizers .right h2,
+.owners .left h2,
+.attendees .right h2 {
+  @apply text-[37px] font-bold ml-[31px] mt-5;
+}
+
+.vendors .left p,
+.organizers .right p,
+.owners .left p,
+.attendees .right p {
+  @apply text-2xl font-normal;
+}
+
+.vendors .left div,
+.organizers .right div,
+.owners .left div,
+.attendees .right div {
+  @apply my-6 flex flex-col space-y-4;
+}
+
+.vendors .left div img,
+.organizers .right div img,
+.owners .left div img,
+.attendees .right div img {
+  @apply h-auto w-[3.5%];
+}
+
+.vendors .left div span,
+.organizers .right div span,
+.owners .left div span,
+.attendees .right div span {
+  @apply flex space-x-2;
+}
+
+.btn_join_vendor {
+  @apply py-[10px] px-5 rounded-[40px] bg-prmColor text-bgColor;
+  @apply font-medium w-fit my-8 hover:bg-hovColor text-sm;
+  @apply active:bg-preColor ml-[31px] hover:text-bgColor;
+  transition: 0.3s;
+}
+
+.btn_plan_event {
+  @apply py-[10px] px-5 rounded-[40px] bg-bgColor text-prmColor;
+  @apply font-medium w-fit my-8 hover:bg-hovColor text-sm;
+  @apply active:bg-preColor ml-[31px]  hover:text-bgColor;
+  transition: 0.3s;
+}
+
+.vendors,
+.owners {
+  @apply bg-bgColor;
+}
+
+.vendors .right img,
+.owners .right img {
+  @apply rounded-tr-[40px] rounded-br-[40px];
+}
+
+.organizers .left img {
+  @apply ml-12;
+}
+
+.organizers,
+.attendees {
+  @apply bg-prmColor text-bgColor;
+}

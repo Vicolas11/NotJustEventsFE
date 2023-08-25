@@ -1,0 +1,96 @@
+.navbar {
+  @apply flex flex-row justify-around items-center py-3 md:py-4;
+  @apply text-txtColor px-1 md:px-6 font-medium;
+}
+
+.navbar_logo {
+  @apply w-full;
+}
+
+.navbar_link {
+  @apply flex flex-row md:space-x-3 space-x-5 w-full;
+}
+
+.logo {
+  @apply pl-2 w-[16%] h-auto md:w-[12%] lg:w-[26%] xl:w-[23%] p-0 m-0 cursor-pointer;
+}
+
+.nav_link {
+  @apply w-full list-none hidden md:flex md:space-x-5 lg:space-x-8;
+  @apply md:mt-3 justify-around;
+}
+
+.nav_link li {
+  @apply flex items-center space-x-1 w-full relative whitespace-nowrap hover:text-hovColor;
+}
+
+.nav_link li:hover::after {
+  @apply absolute left-0 bottom-[25px] w-1/2 h-[2px];
+  @apply bg-prmColor text-prmColor;
+  content: "";
+}
+
+.nav_li_active {
+  @apply font-bold relative inline-block;
+}
+
+.nav_li_active::after {
+  @apply absolute left-0 bottom-[25px] w-1/2 h-[2px] bg-prmColor;
+  @apply hover:bg-hovColor;
+  content: "";
+}
+
+.nav_link_phone {
+  @apply w-full list-none md:hidden flex flex-col lg:space-x-1 md:space-x-2;
+  @apply absolute left-0 top-8 mt-[32px] bg-bgColor z-30;
+  @apply text-prmColor shadow-md;
+}
+
+.nav_link_phone li {
+  @apply flex items-center space-x-1 pl-4 py-3 relative;
+  @apply hover:bg-hovColor hover:text-bgColor w-full;
+}
+
+.nav_link_phone .nav_mobile_li_active {
+  @apply bg-prmColor text-bgColor;
+}
+
+.navbar_text {
+  @apply text-2xl landscape:text-2xl md:text-2xl;
+  @apply text-prmColor font-bold tracking-wide;
+}
+
+.btn_wrapper {
+  @apply w-full flex space-x-3 justify-end;
+}
+
+.btn_sign_in {
+  @apply py-1 px-5 rounded-[20px] border-2 border-transparent;
+  @apply font-medium text-txtColor;
+  @apply hover:border-hovColor hover:border-2 hover:text-hovColor;
+  @apply active:border-preColor active:text-preColor font-medium;
+  transition: 0.3s;
+}
+
+.btn_sign_up {
+  @apply py-1 px-5 rounded-[20px] bg-prmColor text-bgColor;
+  @apply font-medium border-transparent;
+  @apply hover:bg-hovColor hover:border-hovColor;
+  @apply active:bg-preColor font-medium;
+  transition: 0.3s;
+}
+
+.desktop_logout {
+  @apply hidden space-x-2 items-center absolute top-14 right-6 z-50 w-fit;
+  @apply bg-bgColor py-3 px-5 cursor-pointer whitespace-nowrap;
+  @apply rounded-b font-medium text-color1 hover:bg-gray-50 hover:text-prmColor;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.mobile_dropdownline {
+  @apply block md:hidden cursor-pointer;
+}
+
+.desktop_dropdownline {
+  @apply md:block hidden cursor-pointer;
+}
