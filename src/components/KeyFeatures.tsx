@@ -50,6 +50,30 @@ const KeyFeatures = () => {
               platform features.
             </p>
           </div>
+          <div className={styles.card}>
+            <div>
+              <img src="../svg/schedule.svg" alt="schedule icon" />
+            </div>
+            <h2>Advanced Scheduling Tool</h2>
+            <p>
+              Elevate your event coordination with NotJustEvent. The ultimate
+              solution for streamlining your event planning, from vendors to
+              performers, attendees to team members, our intuitive interface
+              simplifies the scheduling process.
+            </p>
+          </div>
+          <div className={styles.card}>
+            <div>
+              <img src="../svg/budget.svg" alt="budget icon" />
+            </div>
+            <h2>Intelligent Budgeting Tool</h2>
+            <p>
+              Our intelligent tools take the guesswork out of budgeting,
+              providing you with real-time insights and forecasts. Set your
+              budget, explore cost scenarios, and make informed decisions to
+              create memorable events without breaking the bank.
+            </p>
+          </div>
         </div>
         <div className={styles.btn_wrapper}>
           <button className={styles.btn_explore}>

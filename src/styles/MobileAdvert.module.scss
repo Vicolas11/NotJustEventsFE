@@ -7,19 +7,20 @@
 }
 
 .advert .top {
-  @apply flex items-center;
+  @apply flex flex-col md:flex-row items-center text-center md:text-left;
+  @apply space-y-8 md:space-y-0;
 }
 
 .advert .top .left {
-  @apply flex flex-col space-y-4;
+  @apply flex flex-col space-y-4 items-center md:items-start;
 }
 
 .advert .top .left h1 {
-  @apply text-[50px] font-bold;
+  @apply text-3xl md:text-4xl lg:text-6xl font-bold;
 }
 
 .advert .top .left p {
-  @apply text-2xl text-color3;
+  @apply text-lg md:text-2xl text-color3;
 }
 
 .advert .top .left,
@@ -36,7 +37,7 @@
 }
 
 .btn_wrapper {
-  @apply flex space-x-4;
+  @apply flex space-x-4 flex-wrap justify-center;
 }
 
 .btn_applestore,
@@ -54,17 +55,17 @@
 }
 
 .subscribe {
-  @apply w-full mt-24;
+  @apply w-full mt-12 md:mt-16 lg:mt-24;
 }
 
 .down {
-  @apply bg-prmColor rounded-[40px] py-14 px-6 mx-auto;
-  @apply flex space-x-3 items-center;
+  @apply bg-prmColor rounded-[40px] py-7 md:py-14 px-6 mx-auto;
+  @apply flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-3 items-center;
 }
 
 .down .left,
 .down .right {
-  @apply w-full flex flex-col;
+  @apply w-full flex flex-col text-center md:text-left items-center md:items-start;
 }
 
 .down .left {
@@ -72,7 +73,7 @@
 }
 
 .down .left h2 {
-  @apply text-[58px] font-medium;
+  @apply text-4xl lg:text-6xl font-medium mb-4 lg:mb-8;
 }
 
 .down .left .p {
@@ -85,12 +86,12 @@
 
 .down .right input {
   @apply bg-bgColor rounded-[40px] placeholder:text-lg;
-  @apply placeholder:text-color8 py-[12px] px-4;
+  @apply placeholder:text-color8 py-[12px] px-4 w-full;
 }
 
 .btn_subscribe {
   @apply flex space-x-1 py-[12px] px-5 rounded-[40px] bg-bgColor text-prmColor;
-  @apply font-medium w-fit items-center my-8;
+  @apply font-medium w-7/12 md:w-fit justify-center items-center my-8;
   @apply hover:bg-hovColor text-sm;
   @apply active:bg-preColor font-medium;
   transition: 0.3s;

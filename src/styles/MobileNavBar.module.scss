@@ -1,22 +1,22 @@
 .navbar {
-  @apply flex justify-between items-center py-3 md:py-4;
-  @apply text-txtColor px-2 md:px-6 font-medium w-full;
+  @apply flex lg:hidden flex-col items-center py-3 md:py-4 h-screen;
+  @apply text-txtColor px-1 md:px-6 font-medium w-full;
 }
 
 .navbar_logo {
-  @apply w-full py-1;
+  @apply w-full;
 }
 
 .navbar_link {
-  @apply hidden lg:flex flex-row md:space-x-3 space-x-5 w-full;
+  @apply flex flex-row md:space-x-3 space-x-5 w-full;
 }
 
 .logo {
-  @apply pl-2 w-[40%] lit:w-[80%] h-auto md:w-[26%] xl:w-[23%] p-0 m-0 cursor-pointer;
+  @apply pl-2 w-[16%] h-auto md:w-[12%] lg:w-[26%] xl:w-[23%] p-0 m-0 cursor-pointer;
 }
 
 .nav_link {
-  @apply w-full list-none md:flex md:space-x-5 lg:space-x-8;
+  @apply w-full list-none hidden md:flex md:space-x-5 lg:space-x-8;
   @apply md:mt-3 justify-around;
 }
 
@@ -40,18 +40,33 @@
   content: "";
 }
 
+.nav_link_phone {
+  @apply w-full list-none md:hidden flex flex-col lg:space-x-1 md:space-x-2;
+  @apply absolute left-0 top-8 mt-[32px] bg-bgColor z-30;
+  @apply text-prmColor shadow-md;
+}
+
+.nav_link_phone li {
+  @apply flex items-center space-x-1 pl-4 py-3 relative;
+  @apply hover:bg-hovColor hover:text-bgColor w-full;
+}
+
+.nav_link_phone .nav_mobile_li_active {
+  @apply bg-prmColor text-bgColor;
+}
+
 .navbar_text {
   @apply text-2xl landscape:text-2xl md:text-2xl;
   @apply text-prmColor font-bold tracking-wide;
 }
 
 .btn_wrapper {
-  @apply w-full flex space-x-3 justify-end ;
+  @apply w-full flex space-x-3 justify-end;
 }
 
 .btn_sign_in {
   @apply py-1 px-5 rounded-[20px] border-2 border-transparent;
-  @apply font-medium text-txtColor text-sm whitespace-nowrap;
+  @apply font-medium text-txtColor;
   @apply hover:border-hovColor hover:border-2 hover:text-hovColor;
   @apply active:border-preColor active:text-preColor font-medium;
   transition: 0.3s;
@@ -59,8 +74,16 @@
 
 .btn_sign_up {
   @apply py-1 px-5 rounded-[20px] bg-prmColor text-bgColor;
-  @apply font-medium border-transparent text-sm whitespace-nowrap;
+  @apply font-medium border-transparent;
   @apply hover:bg-hovColor hover:border-hovColor;
   @apply active:bg-preColor font-medium;
   transition: 0.3s;
+}
+
+.mobile_dropdownline {
+  @apply block md:hidden cursor-pointer;
+}
+
+.desktop_dropdownline {
+  @apply md:block hidden cursor-pointer;
 }

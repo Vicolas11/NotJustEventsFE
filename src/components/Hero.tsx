@@ -4,7 +4,11 @@ const Hero = () => {
   return (
     <section className={styles.hero_section}>
       <div className={styles.hero}>
-        <h1>
+        <h1 className={styles.hero_txt}>
+          Revolutionize your <span className={styles.evt_txt}>Events</span> with
+          our <span className={styles.inno_txt}>Innovation</span>{" "}
+        </h1>
+        <h1 className={styles.mobile_hero_txt}>
           Revolutionize your <span className={styles.evt_txt}>Events</span> with
           our <span className={styles.inno_txt}>Innovation</span>{" "}
         </h1>

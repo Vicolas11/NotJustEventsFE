@@ -7,15 +7,15 @@
 }
 
 .testimony h1 {
-  @apply text-[50px] mt-16  font-bold;
+  @apply text-4xl md:text-5xl lg:text-6xl mt-16 font-bold mb-2;
 }
 
 .testimony p {
-  @apply text-xl font-normal mb-10 text-color5;
+  @apply px-3 md:px-0 text-base md:text-xl font-normal mb-10 text-color5;
 }
 
 .carousel .review {
-  @apply flex flex-col space-x-3;
+  @apply flex flex-col;
 }
 
 .testifier {
@@ -47,7 +47,7 @@
 }
 
 .navigator {
-  @apply flex items-center space-x-3 w-[60%] justify-between mx-auto mt-12;
+  @apply flex items-center space-x-3 w-full md:w-[60%] justify-between mx-auto mt-12;
 }
 
 .navigator img {

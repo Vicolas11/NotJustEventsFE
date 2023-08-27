@@ -3,12 +3,18 @@
 }
 
 .hero {
-  @apply flex flex-col w-full text-center mt-10;
+  @apply flex flex-col text-center mt-2 lg:mt-10;
 }
 
-.hero h1 {
-  @apply text-[68px] font-extrabold w-[80%] mx-auto;
-  line-height: 84.7px;
+.hero_txt {
+  @apply text-6xl font-extrabold md:w-[70%] lg:w-[80%] mx-auto;
+  @apply hidden md:block;
+  line-height: 80px;
+}
+
+.mobile_hero_txt {
+  @apply text-4xl font-extrabold w-[80%] mx-auto;
+  @apply block md:hidden;
 }
 
 .hero h1 .evt_txt,
@@ -17,7 +23,7 @@
 }
 
 .hero p {
-  @apply mt-5 mx-auto w-[60%] text-[24px];
+  @apply mt-5 mx-auto w-[90%] lg:w-[60%] text-[1.5rem];
 }
 
 .btn_take_tour {
@@ -37,19 +43,20 @@
 }
 
 .hero_img_wrapper .overlap {
-  @apply flex justify-around items-center space-x-3 mx-auto absolute bg-color1;
-  @apply bottom-[-40px] w-[90%] rounded-lg py-6;
+  @apply flex justify-around flex-wrap items-start mx-auto absolute bg-color1 px-2;
+  @apply bottom-[-3.5rem] md:bottom-[-3rem] lg:bottom-[-3rem] w-[90%] rounded-lg py-2 md:py-4 lg:py-6;
   box-shadow: 0px 8.185198783874512px 16.370397567749023px 0px #00277626;
 }
 
 .hero_img_wrapper .overlap span {
-  @apply flex flex-col items-center w-full;
+  @apply flex flex-col items-center w-[calc(25%-20px)]; 
+  @apply box-border mb-2 lg:mb-0 text-center;
 }
 
 .hero_img_wrapper .overlap span h2 {
-  @apply font-black text-3xl p-0 m-0 text-prmColor;
+  @apply font-black text-sm md:text-2xl lg:text-3xl p-0 m-0 text-prmColor;
 }
 
 .hero_img_wrapper .overlap span p {
-  @apply font-semibold p-0 m-0;
+  @apply font-semibold p-0 m-0 text-[.8rem] md:text-xl;
 }

@@ -1,23 +1,18 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import styles from "../styles/NavBar.module.scss";
+import styles from "../styles/MobileNavBar.module.scss";
+import { Link, useLocation } from "react-router-dom";
 
-const Navbar = () => {
+const MobileNavbar = () => {
   const location = useLocation();
   const { pathname } = location;
   const link = pathname.split("/")[1];
-  const navigate = useNavigate();
-
-  const goHome = () => {
-    navigate("/", { replace: true });
-  };
 
   return (
     <>
       <nav className={styles.navbar}>
-        <div className={styles.navbar_logo} onClick={goHome}>
-          <img src="../svg/logo.svg" className={styles.logo} alt="Logo" />
+        <div className={styles.btn_wrapper}>
+          <button className={styles.btn_sign_in}>Sign In</button>
+          <button className={styles.btn_sign_up}>Sign Up</button>
         </div>
-
         <div className={styles.navbar_link}>
           <ul className={styles.nav_link}>
             <li className={link === "platforms" ? styles.nav_li_active : ""}>
@@ -38,14 +33,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-
-        <div className={styles.btn_wrapper}>
-          <button className={styles.btn_sign_in}>Sign In</button>
-          <button className={styles.btn_sign_up}>Sign Up</button>
-        </div>
       </nav>
     </>
   );
 };
 
-export default Navbar;
+export default MobileNavbar;

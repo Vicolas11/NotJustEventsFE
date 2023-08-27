@@ -7,16 +7,17 @@
 }
 
 .key_features h1 {
-  @apply text-[58px] pt-24 text-center font-medium;
+  @apply text-4xl md:text-6xl pt-12 md:pt-24 text-center font-medium;
 }
 
 .card_wrapper {
-  @apply flex justify-around items-start w-full space-x-8 flex-wrap;
+  @apply flex justify-between flex-wrap;
 }
 
 .card_wrapper .card {
-  @apply flex w-[25%] h-[392px] flex-col rounded-[40px] bg-bgColor;
-  @apply py-8 px-4 space-y-3 items-center mt-12;
+  @apply flex w-full md:w-[calc(50%-30px)] lg:w-[calc(33.33%-50px)] h-[22rem] xl:h-[10rem];
+  @apply lg:h-[392px] flex-col rounded-[40px] bg-bgColor overflow-y-scroll;
+  @apply py-8 px-6 space-y-3 items-center mt-12 mb-[5px] lg:mb-[10px] box-border;
 }
 
 .card_wrapper .card > div {
@@ -29,7 +30,7 @@
 
 .card_wrapper .card > p {
   @apply text-[15px] font-normal text-justify;
-  line-height: 18px;
+  line-height: 1.2rem;
 }
 
 .btn_wrapper {

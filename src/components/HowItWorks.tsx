@@ -9,31 +9,33 @@ const HowItWorks = () => {
           <div className={styles.vendors}>
             <div className={styles.left}>
               <h2>For Vendors</h2>
-              <div>
-                <span>
+              <ul className={styles.list_items}>
+                <li>
                   <img src="../svg/create.svg" alt="create icon" />
                   <p>Create Your Profile</p>
-                </span>
-                <span>
+                </li>
+                <li>
                   <img src="../svg/showcase.svg" alt="showcase icon" />
                   <p>Showcase Your Services</p>
-                </span>
-                <span>
+                </li>
+                <li>
                   <img src="../svg/showcase.svg" alt="showcase icon" />
                   <p>Receive Booking Requests</p>
-                </span>
-                <span>
+                </li>
+                <li>
                   <img src="../svg/deliver.svg" alt="deliver icon" />
                   <p>Deliver Outstanding Services</p>
-                </span>
-                <span>
+                </li>
+                <li>
                   <img src="../svg/deliver.svg" alt="deliver icon" />
                   <p>Get Paid Securely</p>
-                </span>
+                </li>
+              </ul>
+              <div className={styles.btn_wrapper}>
+                <button className={styles.btn_join_vendor}>
+                  Join as a Vendor today!
+                </button>
               </div>
-              <button className={styles.btn_join_vendor}>
-                Join as a Vendor today!
-              </button>
             </div>
             <div className={styles.right}>
               <img src="../img/image10.png" alt="vendor" />
@@ -42,99 +44,105 @@ const HowItWorks = () => {
 
           <div className={styles.organizers}>
             <div className={styles.left}>
-              <img src="../img/image11.png" alt="organizers" />
+              <img src="../img/organizers.png" alt="organizers" />
             </div>
             <div className={styles.right}>
               <h2>For Event Organizers</h2>
-              <div>
-                <span>
+              <ul className={styles.list_items}>
+                <li>
                   <img src="../svg/fileplus.svg" alt="file plus icon" />
                   <p>Discover Vendors</p>
-                </span>
-                <span>
+                </li>
+                <li>
                   <img src="../svg/circleswap.svg" alt="circle swap icon" />
                   <p>Securely Book Events</p>
-                </span>
-                <span>
+                </li>
+                <li>
                   <img src="../svg/dollar.svg" alt="dollar circle icon" />
                   <p>Plan Event</p>
-                </span>
-                <span>
+                </li>
+                <li>
                   <img src="../svg/shield.svg" alt="shield icon" />
                   <p>Host Event</p>
-                </span>
+                </li>
+              </ul>
+              <div className={styles.btn_wrapper}>
+                <button className={styles.btn_plan_event}>
+                  Plan Your Event Today!
+                </button>
               </div>
-              <button className={styles.btn_plan_event}>
-                Plan Your Event Today!
-              </button>
             </div>
           </div>
 
           <div className={styles.owners}>
             <div className={styles.left}>
               <h2>For Venue Owners</h2>
-              <div>
-                <span>
+              <ul className={styles.list_items}>
+                <li>
                   <img src="../svg/copy.svg" alt="copy icon" />
                   <p>List Your Venue</p>
-                </span>
-                <span>
+                </li>
+                <li>
                   <img src="../svg/copy.svg" alt="copy icon" />
                   <p>Showcase Your Space</p>
-                </span>
-                <span>
+                </li>
+                <li>
                   <img src="../svg/date.svg" alt="date icon" />
                   <p>Receive Booking Requests</p>
-                </span>
-                <span>
+                </li>
+                <li>
                   <img src="../svg/date.svg" alt="date icon" />
                   <p>Host Memorable Events</p>
-                </span>
-                <span>
+                </li>
+                <li>
                   <img src="../svg/secure.svg" alt="secure icon" />
                   <p>Secure Payments</p>
-                </span>
+                </li>
+              </ul>
+              <div className={styles.btn_wrapper}>
+                <button className={styles.btn_join_vendor}>
+                  List Your Venue Now!
+                </button>
               </div>
-              <button className={styles.btn_join_vendor}>
-                List Your Venue Now!
-              </button>
             </div>
             <div className={styles.right}>
-              <img src="../img/image12.png" alt="owners" />
+              <img src="../img/owners.png" alt="owners" />
             </div>
           </div>
 
           <div className={styles.attendees}>
             <div className={styles.left}>
-              <img src="../img/image13.png" alt="attendees" />
+              <img src="../img/attendees.png" alt="attendees" />
             </div>
             <div className={styles.right}>
               <h2>For Attendees</h2>
-              <div>
-                <span>
+              <ul className={styles.list_items}>
+                <li>
                   <img src="../svg/fileplus.svg" alt="file plus icon" />
                   <p>Browse Event Category</p>
-                </span>
-                <span>
+                </li>
+                <li>
                   <img src="../svg/circleswap.svg" alt="circle swap icon" />
                   <p>Securely Book Tickets</p>
-                </span>
-                <span>
+                </li>
+                <li>
                   <img src="../svg/circleswap.svg" alt="circle swap icon" />
                   <p>Collaborate with Organizers</p>
-                </span>
-                <span>
+                </li>
+                <li>
                   <img src="../svg/dollar.svg" alt="dollar circle icon" />
                   <p>Stay Updated</p>
-                </span>
-                <span>
+                </li>
+                <li>
                   <img src="../svg/shield.svg" alt="shield icon" />
                   <p>Experience Events</p>
-                </span>
+                </li>
+              </ul>
+              <div className={styles.btn_wrapper}>
+                <button className={styles.btn_plan_event}>
+                  Plan Your Event Today!
+                </button>
               </div>
-              <button className={styles.btn_plan_event}>
-                Plan Your Event Today!
-              </button>
             </div>
           </div>
         </div>

@@ -7,70 +7,89 @@
 }
 
 .category h1 {
-  @apply text-[58px] pt-24 mb-10 font-medium text-center;
+  @apply text-4xl md:text-6xl pt-8 md:pt-24 mb-10 font-medium text-center;
 }
 
-.category div {
-  @apply flex w-full space-x-2;
+.category > .mobile {
+  @apply lg:hidden flex flex-col justify-between w-full space-y-2 text-center;
 }
 
-.category .col1,
-.category .col2,
-.category .col3,
-.category .col4 {
+.mobile img {
+  @apply rounded-[10px];
+}
+
+.mobile .row {
+  @apply flex space-x-3;
+}
+
+.mobile .col {
+  @apply flex flex-col justify-stretch items-stretch;
+}
+
+.mobile .col div img {
+  @apply flex-1 object-cover;
+}
+
+.mobile .col > div {
+  @apply flex space-x-3;
+}
+
+.category > .desktop {
+  @apply hidden lg:flex flex-col md:flex-row justify-between w-full space-x-2 text-center md:text-start;
+}
+
+.desktop .col {
   @apply flex flex-col justify-stretch items-stretch space-y-3 px-1;
 }
 
-.category .col1 h3,
-.category .col2 h3,
-.category .col3 h3,
-.category .col4 h3 {
-  @apply text-[20px] font-semibold;
+.desktop .col h3 {
+  @apply text-xl font-semibold;
 }
 
-.category .col1 img,
-.category .col2 img,
-.category .col3 img,
-.category .col4 img {
-  flex: 1;
-  object-fit: cover;
+.desktop .col img {
+  @apply flex-1 object-cover;
 }
 
-.category .col4 {
-  @apply h-auto w-1/2;
-}
-
-.category .col4 img {
+.desktop .col:nth-child(4) img {
   @apply rounded-tr-[20px] rounded-br-[20px];
 }
 
 .create_evts {
-  @apply bg-color4 relative mt-20 pb-20;
+  @apply bg-color4 relative mt-20 pb-20 overflow-hidden;
 }
 
 .create {
-  @apply w-[90%] mx-auto flex;
+  @apply w-[90%] mx-auto flex flex-col md:flex-row;
 }
 
-.create .left {
-  @apply w-[30%];
+.create .left_desktop {
+  @apply hidden md:block w-[30%];
+}
+
+.create .left_mobile {
+  @apply block md:hidden;
 }
 
 .create .right {
-  @apply w-[70%] relative;
+  @apply md:w-[70%] relative;
 }
 
 .btn_wrapper {
-  @apply flex mt-[12rem] ml-[12rem];
+  @apply flex mt-[5rem] md:mt-[11rem] lg:mt-[11.5rem] ml-[6rem] md:ml-[12rem] mb-9 md:mb-8 lg:mb-0;
 }
 
 .arrow {
-  @apply absolute top-0 left-0 mt-9 ml-2;
+  @apply absolute top-0 left-0 lg:mt-16 md:mt-5 md:ml-4 lg:ml-8 w-36 md:w-60 lg:w-52;
 }
 
-.create .left h1 {
-  @apply text-[50px] mt-14 font-medium;
-  line-height: 56px;
+.create .left_desktop h1 {
+  @apply text-3xl lg:text-5xl mt-14 font-medium text-center md:text-left;
+  line-height: 4rem;
+}
+
+.create .left_mobile h1 {
+  @apply text-3xl lg:text-5xl mt-14 font-medium text-center md:text-left;
+  line-height: 2rem;
 }
 
 .btn_create_evts {

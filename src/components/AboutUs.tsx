@@ -28,6 +28,11 @@ const AboutUs = () => {
             </button>
           </div>
           <div className={styles.down}>
+            <div className={styles.col0}>
+              <img src="../img/image2.png" alt="img2" />
+              <img src="../img/image3.png" alt="img3" />
+              <img src="../img/image4.png" alt="img4" />
+            </div>
             <div className={styles.col1}>
               <img src="../img/image5.png" alt="img5" />
               <img src="../img/image6.png" alt="img6" />
